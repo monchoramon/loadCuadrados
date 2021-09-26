@@ -1,0 +1,84 @@
+.contenedorPrincipal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #252A34;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorSecundario, .recuadros {
+    width: 100px;
+    height: 100px;
+    /* background-color: #FA163F; */
+}
+
+.contenedorSecundario {
+    border-radius: 50px;
+}
+
+.contenedorSecundario span {
+    font-size: 10px;
+    color: #fff;
+}
+
+.recuadros {
+    position: absolute;
+    background-color: transparent;
+    border: 0px solid #fff;
+}
+
+.recuadro1 {
+    transform: rotate(30deg);
+    box-shadow: 0px 0px 6px 6px #00EAD3;
+    animation: recuadro1 2s ease-out infinite;
+}
+
+.recuadro2 {
+    transform: rotate(75deg);
+    box-shadow: 0px 0px 6px 6px #F30067;
+    animation: recuadro2 4s ease infinite;
+}
+
+.recuadro3 {
+    transform: rotate(0deg);
+    box-shadow: 0px 0px 6px 6px #C0E218;
+    animation: completo 2s ease-out infinite;
+}
+
+/* .recuadro3:hover, .recuadro2:hover {
+    width: 130px;
+    height: 130px;
+} */
+
+/* --- Animaciones */
+
+@keyframes recuadro1 {
+    from {
+        transform: rotate(30deg);
+    }
+
+    to {
+        transform: rotate(390deg);
+    }
+}
+
+@keyframes recuadro2 {
+    from {
+        transform: rotate(75deg);
+    }
+
+    to {
+        transform: rotate(425deg);
+    }
+}
+
+@keyframes completo {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
