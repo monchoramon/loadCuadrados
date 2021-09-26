@@ -1,0 +1,2 @@
+# loadCuadrados
+Load spinner
